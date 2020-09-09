@@ -1,0 +1,36 @@
+
+
+//System Libraries here
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    //Variable declare
+    bool x,y;
+    
+    //Display the Heading
+    cout<<"X Y !X !Y X&&Y X||Y X^Y X^Y^X X^Y^Y !(X&&Y) !X||!Y "<<
+          " !(X||Y) !X&&!Y"<<endl;
+    
+    //Output
+    while(cin >> x >> y)
+    {
+    //x=true;
+    //y=true;
+    cout<<(x?'T':'F')<<" "
+        <<(y?'T':'F')<<"  "
+        <<(!x?'T':'F')<<"  "
+        <<(!y?'T':'F')<<"   "
+        <<(x&&y?'T':'F')<<"    "          //4 space
+        <<(x||y?'T':'F')<<"   "           //3 space
+        <<(x^y?'T':'F')<<"    "           //4 space
+        <<((x^y^x)?'T':'F')<<"     "      //5 space
+        <<((x^y^y)?'T':'F')<<"       "    //7 space
+        <<(!(x&&y)?'T':'F')<<"      "     //6 spaces
+        <<((!x||!y)?'T':'F')<<"        "  //8 spaces
+        <<(!(x||y)?'T':'F')<<"      "     // 6 spaces
+        <<((!x&&!y)?'T':'F') << endl;
+    }
+    cout << endl;
+}
+    
